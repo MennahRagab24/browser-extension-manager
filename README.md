@@ -1,16 +1,59 @@
-# React + Vite
+# 🧩 Browser Extension Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, feature-rich web application built with **React (Vite)** and **Tailwind CSS** to manage browser extensions efficiently. It allows users to filter, activate/deactivate, and delete extensions with complete **Dark Mode** support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dynamic Extension List**: Displays extensions with custom logos, titles, and descriptions.
+- **Filter by Status**: Seamlessly filter between `All`, `Active`, and `Inactive` extensions.
+- **Toggle State**: Interactive custom switch button to instantly enable or disable any extension.
+- **Delete Functionality**: Remove unwanted extensions from the dashboard with state cleanup.
+- **Dark Mode Support**: Full light/dark theme toggle with dynamic background and contrast styling.
+- **Fully Responsive**: Grid layout designed for mobile, tablet, and desktop screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** (Vite setup)
+- **Tailwind CSS** (v4 styling & custom variants)
+- **FontAwesome Icons**
+- **JavaScript (ES6+)**
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+### Installation
+
+```bash
+git clone [https://github.com/MennahRagab24/browser-extension-manager.git](https://github.com/MennahRagab24/browser-extension-manager.git)
+cd browser-extension-manager
+npm install
+npm run dev
+```
+### Project Structure
+src/
+├── components/
+│   ├── Buttons.jsx       # Filter control buttons
+│   ├── Cards.jsx         # Extension grid layout container
+│   ├── Header.jsx        # Navigation bar & theme switcher
+│   └── SingleCard.jsx    # Individual extension card component
+├── data/
+│   └── data.json         # Initial extensions mock dataset
+├── pages/
+│   └── Home.jsx          # Main page & centralized state management
+├── App.jsx
+├── index.css
+└── main.jsx
+
+Author
+GitHub: @MennahRagab24
